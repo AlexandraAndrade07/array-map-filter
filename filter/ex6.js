@@ -30,7 +30,7 @@ function filterOffensiveComments(comments, bannedWords) {
 	return comments.filter(function(comment){
     return (!(bannedWords.map(bw => comment.toLowerCase().includes(bw))).includes(true))
   })
-}
+} 
 
 // Ne pas modifier l'export
 module.exports = filterOffensiveComments;
