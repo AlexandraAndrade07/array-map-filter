@@ -11,8 +11,38 @@ Sortie attendue:
 
  */
 
+
+// function checkPositive(num){
+//   	return num >=0;
+//   }	
+
+// function getPositiveNumbers(numbers) {
+//   return numbers.filter(checkPositive); 
+  
+// }
+
+
 function getPositiveNumbers(numbers) {
+	return numbers.filter(function(number) {
+		return number >= 0;
+	});
 }
+
+
+// const getPositiveNumbers = (numbers) => numbers.filter((number => number >=0));
+
+
+/*var ages = [32, 33, 16, 40];
+
+function checkAdult(age) {
+    return age >= 18;
+}
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+}
+*/
+
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
 // mais alors, il faut alors lancer l'exercice avec node filter/ex1
